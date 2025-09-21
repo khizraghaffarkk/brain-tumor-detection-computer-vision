@@ -5,10 +5,9 @@ This repository contains an **end-to-end machine learning project** for detectin
 ---
 
 ## 📁 Project Structure
-**Dataset source:** Downloaded from [Kaggle - Brain Tumor MRI Dataset](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset) or you can use any other relevant brain MRI dataset.
 
 ```plaintext
-end_to_end/
+brain-tumor-detection-computer-vision/
 │
 ├── dataset/                        # MRI brain images dataset
 │   ├── Training/
@@ -80,8 +79,8 @@ Before running the project, ensure you have the following installed:
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/brain-tumor-detection.git
-cd end_to_end
+git clone https://github.com/khizraghaffarkk/brain-tumor-detection-computer-vision.git
+cd brain-tumor-detection-computer-vision
 ```
 ### Step 2: Set Up a Virtual Environment
 
