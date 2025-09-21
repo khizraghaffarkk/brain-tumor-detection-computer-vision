@@ -1,4 +1,4 @@
-## 🧠 Brain Tumor Detection - End-to-End ML Project
+## 🧠 Brain Tumor Detection End-to-End ML Project
 
 This repository contains an **end-to-end machine learning project** for detecting brain tumors from MRI images using a Convolutional Neural Network (CNN). The project includes data preprocessing, model training, evaluation, and a web interface to predict tumors on uploaded images.
 
