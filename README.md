@@ -1,41 +1,45 @@
-# 🧠 Brain Tumor Detection - End-to-End ML Project
+## 🧠 Brain Tumor Detection - End-to-End ML Project
 
 This repository contains an **end-to-end machine learning project** for detecting brain tumors from MRI images using a Convolutional Neural Network (CNN). The project includes data preprocessing, model training, evaluation, and a web interface to predict tumors on uploaded images.
 
 ---
 
-## 📂 Project Structure
+## 📁 Project Structure
+**Dataset source:** Downloaded from [Kaggle - Brain Tumor MRI Dataset](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset) or you can use any other relevant brain MRI dataset.
 
+```plaintext
 end_to_end/
 │
-├── dataset/ # MRI brain images dataset
-│ ├── Training/
-│ │ ├── glioma/
-│ │ ├── meningioma/
-│ │ ├── notumor/
-│ │ └── pituitary/
-│ └── Testing/
-│ ├── glioma/
-│ ├── meningioma/
-│ ├── notumor/
-│ └── pituitary/
+├── dataset/                        # MRI brain images dataset
+│   ├── Training/
+│   │   ├── glioma/
+│   │   ├── meningioma/
+│   │   ├── notumor/
+│   │   └── pituitary/
+│   └── Testing/
+│       ├── glioma/
+│       ├── meningioma/
+│       ├── notumor/
+│       └── pituitary/
 │
 ├── model/
-│ └── model.h5 # Trained CNN model
+│   └── model.h5                     # Trained CNN model
 │
 ├── templates/
-│ └── index.html # Web interface template
+│   └── index.html                   # Web interface template
 │
-├── uploads/ # Folder to store uploaded images
+├── uploads/                         # Temporary storage for uploaded images
 │
-├── main.py # FastAPI/Flask web application
-├── script.ipynb # Jupyter notebook for training and analysis
-├── requirements.txt # Python dependencies
-└── Dockerfile # Docker configuration
+├── main.py                          # FastAPI/Flask web application
+├── script.ipynb                     # Jupyter notebook for training and evaluation
+├── requirements.txt                 # Python dependencies
+└── Dockerfile                       # Docker configuration
+
 
 ## 📂 Folder Overview
 
 - `dataset/` → Contains MRI images divided into **training** and **testing** sets.  
+  - Dataset Source: Downloaded from [Kaggle - Brain Tumor MRI Dataset](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset) or you can use any other relevant brain MRI dataset. 
 - `model/` → Stores the trained CNN model (`model.h5`).  
 - `templates/` → HTML templates for the web interface.  
 - `uploads/` → Temporary storage for uploaded images.  
@@ -78,26 +82,28 @@ Before running the project, ensure you have the following installed:
 ```bash
 git clone https://github.com/your-username/brain-tumor-detection.git
 cd end_to_end
-
+```
 ### Step 2: Set Up a Virtual Environment
 
 ```bash
 python3 -m venv venv
 source venv/bin/activate
-
+```
 ### Step 3: Install Dependencies
 
 ```bash
 pip install -r requirements.txt
-
+```
 ### 🏃 Running the Web Application
 Run the web app:
 ```bash
 python main.py
+```
 
 Open your browser and go to:
 ```bash
 http://127.0.0.1:8000
+```
 Upload an MRI image to detect tumor type and confidence score.
 
 ## 🧠 Training the Model
@@ -125,3 +131,16 @@ To run the project in a Docker container:
 ```bash
 docker build -t brain-tumor-detection .
 docker run -p 8000:8000 brain-tumor-detection
+```
+
+## 🖥️ User Interface
+
+This is the web interface where users can interact with the system to make predictions.  
+Users can upload MRI images and get predictions of tumor type along with the confidence score.
+
+### Upload Page
+![Upload MRI Image](images/Screenshot_from_2025-09-21_14-07-06.png)
+
+### Prediction Result
+![Prediction Output](images/Screenshot_from_2025-09-21_14-09-01.png)  
+
