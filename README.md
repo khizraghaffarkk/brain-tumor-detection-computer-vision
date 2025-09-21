@@ -138,8 +138,9 @@ This is the web interface where users can interact with the system to make predi
 Users can upload MRI images and get predictions of tumor type along with the confidence score.
 
 ### Upload Page
-![Upload MRI Image](images/Screenshot\ from\ 2025-09-21\ 14-07-06.png)
+![Upload MRI Image](images/upload_page.png)
 
 ### Prediction Result
-![Prediction Output](images/Screenshot\ from\ 2025-09-21\ 14-09-01.png)  
+![Prediction Output](images/prediction_result.png)
+
 
