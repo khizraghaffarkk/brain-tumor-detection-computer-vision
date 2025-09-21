@@ -34,7 +34,7 @@ end_to_end/
 ├── script.ipynb                     # Jupyter notebook for training and evaluation
 ├── requirements.txt                 # Python dependencies
 └── Dockerfile                       # Docker configuration
-
+```
 
 ## 📂 Folder Overview
 
